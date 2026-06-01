@@ -68,7 +68,7 @@ export default function Intro() {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen bg-gradient-to-br from-[#001848] via-[#093f87] to-[#001848] flex items-center justify-center px-8"
+      className="min-h-screen bg-[#001848] flex items-center justify-center px-8"
       style={{ perspective: "1000px" }}
     >
       <div className="max-w-6xl w-full grid lg:grid-cols-2 gap-16 items-center">
