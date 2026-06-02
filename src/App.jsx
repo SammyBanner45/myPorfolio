@@ -1,6 +1,7 @@
 // import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Tech from "./components/techstack";
+import Project from "./components/projects"
 import { gsap } from "gsap";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       {/* <Hero /> */}
       <Intro/>
       <Tech/>
+      <Project/>
     </div>
   );
 }

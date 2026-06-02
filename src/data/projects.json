@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Dinos & Fossils",
+    "category": "Frontend Fundamentals",
+    "tech": ["React", "Framer", "Three.js", "Node"],
+    "desc": "A responsive educational website exploring dinosaurs and paleontology, built with HTML and CSS to demonstrate strong fundamentals in layout, styling, and user-focused design.",
+    "image": "./public/dino.png",
+    "github": "https://github.com/SammyBanner45/DinoAndFossils_snwproject",
+    "live": "https://dinoandfossils.netlify.app/"
+  },
+  {
+    "title": "CinePickr",
+    "category": "API & DOM",
+    "desc": "CinePickr is a frontend project that allows users to search movies in real-time, manage a personal watchlist, and explore content using filtering and sorting features powered by public APIs.",
+    "tech": ["React", "Framer", "Three.js", "Node"],
+    "image": "./public/CinePickr.png",
+    "github": "https://github.com/SammyBanner45/CinePickr",
+    "live": "https://cine-pickr-project.netlify.app/"
+  },
+  {
+    "title": "Omni Chat",
+    "category": "AI Experiment",
+    "desc": "A web-based AI assistant that leverages Hugging Face models for conversational responses and image generation from natural language prompts.",
+    "tech": ["React", "Tailwind", "Firebase", "Motion"],
+    "image": "./public/omnichat.png",
+    "github": "https://github.com/SammyBanner45/FOAIlab7AC2",
+    "live": "https://omnichatai.netlify.app/"
+  },
+  {
+    "title": "Risk Analytics Terminal",
+    "category": "AI Hackathon",
+    "desc": "A web application for analyzing investment portfolio risk using metrics such as Value at Risk (VaR), Sharpe Ratio, beta, and asset correlation.",
+    "tech": ["React", "Tailwind", "Firebase", "Motion"],
+    "image": "./public/Stock.png",
+    "github": "https://github.com/SammyBanner45/Stock-Portfolio-Risk-Analyzer",
+    "live": "http://stock-portfolio-risk-analyzer.vercel.app/"
+  }
+]
