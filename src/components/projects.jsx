@@ -132,7 +132,7 @@ export default function FeaturedProjects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="relative overflow-hidden py-24 bg-[#000000]"
+      className="relative overflow-hidden py-25 mb-0 bg-[#000000]"
     >
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(209,171,62,0.08),transparent_65%)]" />
@@ -144,11 +144,11 @@ export default function FeaturedProjects() {
 
         <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#d1ab3e]">
+            <p className="mb-4 text-sm uppercase tracking-[0.35em] text-cyan-300">
               Featured Work
             </p>
 
-            <h2 className="text-6xl md:text-8xl font-black text-[#5cefff]">
+            <h2 className="text-6xl md:text-8xl font-black text-[#ffffff]">
               PROJECTS
             </h2>
           </div>
@@ -183,7 +183,7 @@ export default function FeaturedProjects() {
 
         <div
           ref={trackRef}
-          className="relative mx-auto h-[600px] max-w-6xl"
+          className="relative mx-auto h-[500px] max-w-6xl"
         >
           {projects.map((project, index) => {
             const isActive =
@@ -267,6 +267,7 @@ export default function FeaturedProjects() {
           })}
         </div>
       </div>
+
     </section>
   );
 }

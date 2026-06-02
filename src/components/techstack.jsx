@@ -62,15 +62,16 @@ export default function TechStack() {
   <section
     ref={sectionRef}
     id="tech"
-    className="relative min-h-screen overflow-hidden bg-[#040242]"
+    className="relative min-h-screen overflow-hidden bg-[#000000]"
   >
+  <div className="mx-auto mb-16 h-px max-w-xl bg-gradient-to-r from-transparent via-cyan-300 to-transparent shadow-[0_0_22px_#00f5ff]" />
     {/* Background Glow */}
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(209,171,62,0.08),transparent_60%)]" />
 
     <div className="relative z-10 max-w-7xl mx-auto px-8 py-24">
       {/* Heading */}
       <div className="mb-24">
-        <p className="uppercase tracking-[0.4em] text-[#d1ab3e] text-sm mb-4">
+        <p className="uppercase tracking-[0.4em] text-[cyan] text-sm mb-4">
           Skills & Technologies
         </p>
 
@@ -100,7 +101,7 @@ export default function TechStack() {
               h-5 w-5
               rounded-full
               border-2 border-[#d1ab3e]
-              bg-[#040242]
+              bg-[#050508]
               shadow-[0_0_10px_rgba(209,171,62,1)]
               shrink-0
             "
@@ -152,7 +153,7 @@ export default function TechStack() {
               h-5 w-5
               rounded-full
               border-2 border-[#d1ab3e]
-              bg-[#040242]
+              bg-[#050508]
               shadow-[0_0_20px_rgba(209,171,62,1)]
               shrink-0
             "
@@ -160,5 +161,12 @@ export default function TechStack() {
         </div>
       </div>
     </div>
+  <div
+  className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[50vw] h-[1px]"
+  style={{
+    background:
+      "linear-gradient(to right, transparent, #22d3ee 25%, #d1ab3e 50%, #22d3ee 75%, transparent)",
+  }}
+/>
   </section>
 );}

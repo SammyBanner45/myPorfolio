@@ -75,7 +75,7 @@ export default function Intro() {
         
         {/* Left */}
         <div>
-          <p className="uppercase tracking-[0.4em] text-[#cccccc] text-sm mb-6">
+          <p className="uppercase tracking-[0.4em] text-cyan-300 text-sm mb-6">
             B.TECH in CSE(AI & ML)
           </p>
 
@@ -155,6 +155,9 @@ export default function Intro() {
         </div>
 
       </div>
+      
+
+      
     </section>
   );
 }
