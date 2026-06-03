@@ -67,6 +67,7 @@ export default function Intro() {
 
   return (
     <section
+      id="intro"
       ref={sectionRef}
       className="min-h-screen bg-[#000000] flex items-center justify-center px-8"
       style={{ perspective: "1000px" }}

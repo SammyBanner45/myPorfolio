@@ -1,4 +1,4 @@
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Contact from "./components/contact";
 import Tech from "./components/techstack";
@@ -8,7 +8,7 @@ import { gsap } from "gsap";
 export default function App() {
   return (
     <div className="bg-black min-h-screen">
-      {/* <Hero /> */}
+      <Hero />
       <Intro/>
       <Tech/>
       <Project/>
