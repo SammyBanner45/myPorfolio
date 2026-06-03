@@ -7,6 +7,7 @@ overflow: hidden;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 
 /* ====================
@@ -80,8 +81,8 @@ pointer-events: none;
 }
 
 .ring-1 {
-width: 650px;
-height: 650px;
+width: 400px;
+height: 400px;
 
 border: 2px solid rgba(34, 211, 238, 0.22);
 border-top-color: rgba(34, 211, 238, 0.7);
@@ -98,8 +99,8 @@ rotateSlow 30s linear infinite 0.9s;
 }
 
 .ring-2 {
-width: 900px;
-height: 900px;
+width: 600px;
+height: 600px;
 
 border: 2px solid rgba(209, 171, 62, 0.22);
 border-right-color: rgba(209, 171, 62, 0.7);
@@ -116,8 +117,8 @@ rotateReverse 40s linear infinite 1.4s;
 }
 
 .ring-3 {
-width: 1150px;
-height: 1150px;
+width: 800px;
+height: 800px;
 
 border: 1px solid rgba(255,255,255,0.08);
 border-bottom-color: rgba(255,255,255,0.2);
@@ -376,4 +377,56 @@ transform: translateY(0);
 50% {
 transform: translateY(10px);
 }
+}
+
+.corner-glow-wrapper {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* base glow */
+.corner-glow {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  opacity: 0;
+  animation: glowIn 1.8s ease-out forwards;
+  filter: blur(80px);
+}
+
+/* TOP LEFT (cyan) */
+.corner-glow.top-left {
+  top: -20vh;
+  left: -20vw;
+  background: radial-gradient(
+    circle at top left,
+    rgba(25, 68, 75, 0.9),
+    transparent 70%
+  );
+}
+
+/* TOP RIGHT (gold) */
+.corner-glow.top-right {
+  top: -20vh;
+  right: -20vw;
+  background: radial-gradient(
+    circle at top right,
+    rgba(83, 66, 19, 0.9),
+    transparent 70%
+  );
+  animation-delay: 0.2s;
+}
+
+/* fade in glow */
+@keyframes glowIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

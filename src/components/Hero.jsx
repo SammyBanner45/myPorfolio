@@ -15,6 +15,10 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
+        <div className="corner-glow-wrapper">
+        <div className="corner-glow top-left"></div>
+        <div className="corner-glow top-right"></div>
+        </div>
 
       {/* Background Glows */}
       <div className="hero-cyan-glow" />
@@ -37,8 +41,8 @@ export default function Hero() {
       <div className="hero-content">
         <h1
   className="
-    text-[140px]
-    md:text-[220px]
+    text-[80px]
+    md:text-[120px]
     font-black
     tracking-[-0.03em]
     select-none
